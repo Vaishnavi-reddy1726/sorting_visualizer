@@ -8,84 +8,90 @@ A pictorial representation demonstrating how Data Structures and Algorithms can 
 https://medium.com/@bbabina/sorting-visualizer-aeed2276f750
 
 
-# Visualization of the algorithms.
-The visualizer basically plays with colors to better understand what is happening in the algorithm. The data here is the bars that are generated randomly with arbitrary heights. 
+Sorting Visualizer
 
-When the algorithm runs, these bars or segments change to three different colors – yellow, red, and green, each holding its own function.
+A visual tool that demonstrates how various sorting algorithms work by representing data with interactive bars of different heights. This project helps to understand sorting concepts visually and observe the step-by-step operations of algorithms.
 
-The yellow segment represents that the algorithm is looking at that particular segment. If it is changing a certain segment it will mark it as red. If the final position of the segment is where it is now that is in a sorted position, it will mark it as green.
+For a detailed article on the project, see here
+.
 
-Once the algorithm is running, it disables all the buttons so that sorting can be performed uninterruptedly. Color and height are changed accordingly while the algorithm is working. 
+**How Visualization Works**
 
-## The algorithm used are: 
+The visualizer represents each element of the array as a colored bar. When an algorithm is running:
 
-# Bubble Sort
+Yellow bars indicate elements currently being compared.
 
-Bubble Sort is an iterative sorting algorithm that imitates the movement of bubbles in sparkling water.
-The bubbles represent the elements of the data structure.
-In real practice, the bigger bubbles reach the top faster than smaller bubbles, and this algorithm works in the same way.
-It iterates through the data structure and for each cycle compares the current element with the next one, and swaps them if they are in the wrong order.
+Red bars indicate elements being swapped or actively modified.
 
-The major drawback of this sorting technique is that it requires a lot of time because of its worst case as O(n2). So, it can be used for only a small set of data and only when we require a handful of swaps.
+Green bars show elements that are in their correct sorted position.
 
-Bubble Sort is a simple algorithm to implement but not much effective in real-world scenarios.
+While the sorting process is in progress, interactive buttons are disabled to avoid interference. Bar heights and colors update dynamically to reflect the algorithm’s operation.
 
-# Insertion Sort
+Algorithms Implemented
+**Bubble Sort**
 
-Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. 
+Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order. Larger elements “bubble” to the top with each pass.
 
-The algorithm divides the data structure into two sublists: a sorted one, and (n-1) set of elements still to sort. Initially, the sorted sublist is made up of just one element and it gets progressively filled. For every iteration, the algorithm picks an element on the unsorted sublist and inserts it at the right place in the sorted sublist. 
+Complexity: O(n²)
 
-The average complexity being O(n2), the performance is directly proportional to the square of the input taken. In simple, the time taken for execution will take square times the input size.
+Best For: Small datasets
 
-It is really easy to implement and it’s efficient only on small data structures which are almost sorted. 
+Note: Simple to implement but inefficient for large arrays.
 
-# Selection Sort
+**Insertion Sort**
 
-Selection Sort is an iterative and in-place sorting algorithm that divides the data structure into two sublists: the ordered one, and the unordered one.
+Insertion Sort builds a sorted portion of the array one element at a time. Each new element is placed in the correct position within the sorted section.
 
-The selection sort algorithm sorts an array by repeatedly finding the minimum element from the unordered part and putting it at the beginning. In every iteration of selection sort, the minimum element from the unordered subarray is picked and moved to the ordered sublist. 
+Complexity: O(n²)
 
-The main advantage of the selection sort is that it performs well on a small list. Furthermore, no additional temporary storage is required beyond what is needed to hold the original list.
+Best For: Small or nearly sorted datasets
 
-It retains the first k smallest element in its first k iterations.  So, you don’t need to sort all the data to obtain the first kth sorted data.
+Note: Efficient for arrays that are almost sorted.
 
+**Selection Sort**
 
-# Merge Sort
+Selection Sort repeatedly finds the minimum element from the unsorted part and places it at the beginning. It gradually grows the sorted portion of the array.
 
-Merge Sort is a sorting algorithm based on the Divide and Conquer technique. Basically, it divided the data into different groups, sorts data into groups, and merges them to get complete sorted data. 
+Complexity: O(n²)
 
-The first stage is where the list is split until it forms individual elements called sub-lists. After this, the ‘merge’ stage begins. Here the sub-lists are paired up and are arranged according to the order stated. These paired lists are paired again to form groups and are again arranged according to the intended order. This process happens until the sub-lists form one list. 
+Best For: Small datasets
 
-The complexity O(nxlogn) denotes the logarithmic time which makes this sorting technique faster than the other. But, because of space complexity of O(n), it requires more space.
+Note: No extra memory is needed; can partially sort for a specific number of elements.
 
-It works perfectly well for a large set of data because of its low time complexity. But, it requires at least twice the memory than other sorts. 
+**Merge Sort**
 
+Merge Sort is a divide-and-conquer algorithm. It splits the array into smaller subarrays, sorts them, and then merges them back together in order.
 
-# Heap Sort 
+Complexity: O(n log n)
 
-Heap Sort is an in-place iterative sorting algorithm based on auxiliary data structures called heap.
+Best For: Large datasets
 
-Heap sort can be thought of as an improved selection sort. Alike selection sort, heapsort divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region.
+Note: Requires extra memory for merging; faster than quadratic algorithms.
 
-Heap sort works by transforming the list of items to be sorted into a heap data structure that is – a binary tree with heap properties. In a binary tree, every node has at most, two descendants. A node possesses the heap property when none of its descendants have greater values than itself. The largest element of the heap is removed and inserted into the sorted list. The remaining sub-tree is transformed into a heap again. This process is repeated until no elements remain. 
+**Heap Sort**
 
-While other sorting algorithms may grow exponentially slower as the number of items to sort increases, the time required to perform Heap sort increases logarithmically. This suggests that Heap sort is particularly suitable for sorting a huge set of data.
+Heap Sort converts the array into a heap structure, repeatedly removes the largest element, and places it in the sorted portion.
 
-The Heap sort algorithm is widely used because of its efficiency. 
+Complexity: O(n log n)
 
+Best For: Large datasets
 
-# Quick Sort
+Note: Efficient in time but works in place with minimal additional memory.
 
-Quick Sort is a sorting algorithm based on splitting the data structure into smaller partitions and sorting them recursively until the data structure is sorted.
+**Quick Sort**
 
-This division in partitions is done based on one element, called a pivot. All the elements bigger than the pivot get placed on the right side of the structure, and the smaller ones to the left.  This occurs recursively to the two partitions and so on.
+Quick Sort selects a pivot and partitions the array such that elements smaller than the pivot go to the left and larger elements go to the right. It recursively applies this process to each partition.
 
-This partition technique based on the pivot is called Divide and Conquer.
+Complexity: Average O(n log n), Worst O(n²)
 
-It has an efficient average case compared to any other sort algorithm. But, it is not a stable sort. That means the order of equal elements may not be preserved.
-Quicksort is one of the most efficient sorting algorithms, and this makes it one of the most used as well. 
+Best For: Large datasets
 
+Note: Fast and widely used but not stable; equal elements may change relative positions.
 
+**How This Project Helps**
 
+Visual Learning: See exactly how each sorting algorithm operates step by step.
 
+Comparative Understanding: Observe differences in efficiency and behavior between algorithms.
+
+Interactive Exploration: Modify array size and elements to test algorithms dynamically.
