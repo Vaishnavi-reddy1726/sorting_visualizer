@@ -21,8 +21,8 @@ While the sorting process is in progress, interactive buttons are disabled to av
 ## **Bubble Sort**
 
 Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order. Larger elements “bubble” to the top with each pass.
-Complexity: O(n²)
 
+Complexity: O(n²)
 Best For: Small datasets
 
 ## **Insertion Sort**
