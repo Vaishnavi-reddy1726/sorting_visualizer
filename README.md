@@ -18,13 +18,14 @@ Green bars show elements that are in their correct sorted position.
 While the sorting process is in progress, interactive buttons are disabled to avoid interference. Bar heights and colors update dynamically to reflect the algorithm’s operation.
 
 
-# **Bubble Sort**
+## **Bubble Sort**
 
 Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order. Larger elements “bubble” to the top with each pass.
 Complexity: O(n²)
+
 Best For: Small datasets
 
-# **Insertion Sort**
+## **Insertion Sort**
 
 Insertion Sort builds a sorted portion of the array one element at a time. Each new element is placed in the correct position within the sorted section.
 Complexity: O(n²)
