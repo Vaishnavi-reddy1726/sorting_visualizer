@@ -22,45 +22,48 @@ While the sorting process is in progress, interactive buttons are disabled to av
 
 Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order. Larger elements “bubble” to the top with each pass.
 
-Complexity: O(n²)
-Best For: Small datasets
+Complexity: O(n²) and Best For: Small datasets
 
 ## **Insertion Sort**
 
 Insertion Sort builds a sorted portion of the array one element at a time. Each new element is placed in the correct position within the sorted section.
-Complexity: O(n²)
-Best For: Small or nearly sorted datasets
+
+Complexity: O(n²) and Best For: Small or nearly sorted datasets
 
 ## **Selection Sort**
 
 Selection Sort repeatedly finds the minimum element from the unsorted part and places it at the beginning. It gradually grows the sorted portion of the array.
-Complexity: O(n²)
-Best For: Small datasets
+
+Complexity: O(n²) and Best For: Small datasets
 
 ## **Merge Sort**
 
 Merge Sort is a divide-and-conquer algorithm. It splits the array into smaller subarrays, sorts them, and then merges them back together in order.
-Complexity: O(n log n)
-Best For: Large datasets
+
+Complexity: O(n log n) and Best For: Large datasets
+
 Note: Requires extra memory for merging; faster than quadratic algorithms.
 
 ## **Heap Sort**
 
 Heap Sort converts the array into a heap structure, repeatedly removes the largest element, and places it in the sorted portion.
-Complexity: O(n log n)
-Best For: Large datasets
+
+Complexity: O(n log n) and Best For: Large datasets
+
 Note: Efficient in time but works in place with minimal additional memory.
 
 ## **Quick Sort**
 
 Quick Sort selects a pivot and partitions the array such that elements smaller than the pivot go to the left and larger elements go to the right. It recursively applies this process to each partition.
 
-Complexity: Average O(n log n), Worst O(n²)
-Best For: Large datasets
+Complexity: Average O(n log n), Worst O(n²) and Best For: Large datasets
+
 Note: Fast and widely used but not stable; equal elements may change relative positions.
 
 **How This Project Helps**
 
 **Visual Learning** : See exactly how each sorting algorithm operates step by step.
+
 **Comparative Understanding** : Observe differences in efficiency and behavior between algorithms.
+
 **Interactive Exploration** : Modify array size and elements to test algorithms dynamically.
